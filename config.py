@@ -8,7 +8,7 @@ from sqlalchemy import create_engine
 from models import Base
 
 MAX_THREADS = 3
-USE_CACHE = True
+USE_CACHE = False
 SAVE_TO_DB = USE_CACHE
 CACHE_DB = 'default_project'
 

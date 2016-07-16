@@ -21,15 +21,15 @@ if __name__ == '__main__':
                       dest="parse_python", default=False)
 
     options, args = parser.parse_args()
-    
-    if options.parse_python:
-        print "Scape python projects"
-        bot = LangPythonSpider(**default_spider_params())
-    else:
-        print "Scrape trandings"
-        bot = ExploreSpider(**default_spider_params())
 
-    bot.setup_proxylist('/var/proxylist.txt', 'http', auto_change=True)
-    bot.setup_grab(timeout=4096, connect_timeout=10)
+    bot = ExploreSpider(**default_spider_params())
+
+    #print dir(bot)
+
+    # bot.setup_proxylist(proxy_file='proxylist.txt',proxy_type='http', auto_change=True)
+
+    #print bot.load_proxylist.__doc__
+    #bot.load_proxy(source='proxylist.txt',proxy_type='http') #, auto_change=True)
+    #bot.setup_grab(timeout=4096, connect_timeout=10)
     bot.run()
     print bot.render_stats() 
