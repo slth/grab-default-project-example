@@ -6,7 +6,7 @@ from optparse import OptionParser
 
 from grab import Grab
 from grab.spider import Spider, Task
-from grab.tools.logs import default_logging
+from weblib.logs import default_logging
 
 from spiders.explore import ExploreSpider
 from spiders.lang_python import LangPythonSpider
