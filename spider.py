@@ -26,7 +26,7 @@ if __name__ == '__main__':
 
     #print dir(bot)
 
-    # bot.setup_proxylist(proxy_file='proxylist.txt',proxy_type='http', auto_change=True)
+    #bot.setup_proxylist(proxy_file='proxylist.txt',proxy_type='http', auto_change=True)
 
     #print bot.load_proxylist.__doc__
     #bot.load_proxy(source='proxylist.txt',proxy_type='http') #, auto_change=True)
